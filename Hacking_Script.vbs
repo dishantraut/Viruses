@@ -1,0 +1,8 @@
+X=MsgBox("Hello I am hacking your PC...",0+16,"Title") 
+X=MsgBox("Starting to upload_virus...",1+32,"Title") 
+X=MsgBox("Virus installed...",2+48,"Title") 
+X=MsgBox("You cannot abort the hack now...",3+64,"Title") 
+X=MsgBox("Thank You for your permission .....",4+16,"Title") 
+X=MsgBox("Got access to your WebCam.....",5+32,"Title") 
+X=MsgBox("Sending your data to hacked server.....",6+48,"Title") 
+X=MsgBox("Thank You ...",0+64,"Title") 
