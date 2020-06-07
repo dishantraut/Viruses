@@ -1,6 +1,11 @@
 @echo off
-:x
-start notepad.exe /b
-start mspaint.exe /b
-start calc.exe /b
+😡
+start winword
+start mspaint
+start notepad
+start write
+start cmd
+start explorer
+start control
+start calc
 goto x
