@@ -1,0 +1,13 @@
+Beginvirus
+if spread-condition TRUE then begin
+    for the target files begin
+       if target affected TRUE then begin
+          Determine where to place virus instructions
+          Copy the virus instructions
+          Modify target to spread the virus later
+       End if
+    End for
+End if
+Perform some other instruction(s) //Optional
+Go back to beginning
+Endvirus
