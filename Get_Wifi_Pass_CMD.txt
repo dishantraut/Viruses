@@ -1,0 +1,10 @@
+# Get Password Of Wifi Connected To Your Machine Till Now
+
+OPEN CMD / PowerShell :- 
+netsh wlan show profile 
+netsh wlan show profile networkname key=clear
+
+You will get a list 
+Look for 'Security Settings'
+Insde SS -> Look for 'Key Content' 
+KC = Password
