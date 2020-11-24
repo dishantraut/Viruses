@@ -44,7 +44,7 @@ ipconfig /renew
 ipconfig /flushdns
 
 # Reset Windows Socket
-netsh winsock reset
+netsh winsock reset 
 
 # Netsh Commands
 netsh int tcp set global chimney=enabled
