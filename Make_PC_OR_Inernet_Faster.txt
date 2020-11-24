@@ -1,0 +1,63 @@
+## https://eoto.tech/make-computer-run-faster-cmd-trick/
+
+# Get Rid Of Memory Usage
+Elevated CMD
+Fsutil behavior query memoryusage
+Fsutil behavior set memoryusage 2
+When you’re done, close the Command Prompt and restart your computer.
+
+# Delete Old driver using command prompt
+SET DEVMGR_SHOW_NONPRESENT_DEVICES=1
+
+# Uninstall any program
+appwiz.cpl
+
+# Check for hardrive erros
+chkdsk /r
+
+# Make OS Ugly To Boost Performance
+sysdm.cpl > Advance > Performance - Settings > Adjust for best performance
+
+# Register dll file
+regsvr32 actxprxy.dll
+
+# Clean Disk Temporary Files
+cleanmgr.exe > delete temporary files
+
+
+# Scan For Errors
+sfc /scannow
+
+# Shortcut To Start Chrome
+start chrome.exe
+
+---------------------------------------------------------------------------------------------------------------------
+** MAKE INTERNET FASTER **
+
+## https://www.hongkiat.com/blog/5-ways-command-prompt-fix-slow-internet/
+
+# Renew & Reset IP Addressed
+ipconfig /release
+ipconfig /renew
+
+# Flush DNS resolver cache
+ipconfig /flushdns
+
+# Reset Windows Socket
+netsh winsock reset
+
+# Netsh Commands
+netsh int tcp set global chimney=enabled
+netsh int tcp set global autotuninglevel=normal
+netsh int tcp set supplemental (Alternative command for Windows 7 users is at the end)
+netsh int tcp set global dca=enabled
+netsh int tcp set global netdma=enabled
+netsh int tcp set global ecncapability=enabled
+netsh int tcp set global congestionprovider=ctcp (For Windows 7 users)
+
+* To rest above commands just do enabled ka disabled 
+
+
+
+
+
