@@ -1,0 +1,29 @@
+**  https://adamtheautomator.com/windows-subsystem-for-linux/#:~:text=To%20start%20using%20WSL%2C%20open,exe%20provides%20when%20starting%20up.  **
+**  https://docs.microsoft.com/en-us/windows/wsl/wsl-config  **
+
+# get version of WSL and running VMs
+	wsl --list --verbose
+
+# get list of running distros
+	wsl --list --running
+
+# terminate a wsl distros
+	wsl -t Ubuntu-20.04
+	wsl --terminate Ubuntu-20.04
+	wslconfig /t Ubuntu-20.04
+
+check again for running distroses
+	wsl.exe --list --running
+	wsl --list --running
+	wsl --list --verbose
+
+# get list of all distributions on WSL that are installed 
+	wsl --list --all
+	wslconfig /L
+
+# shutdown everything
+	wsl --shutdown
+
+# get list of installed distributions on WSL
+	wsl --list
+
