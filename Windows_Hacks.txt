@@ -1,0 +1,10 @@
+# Windows Useful Hacks
+Win + Q + MRT = Free AntiVirus
+Win + Q + firewall.cpl = Manage & Configure windows firewall
+Win + Q + View reliability history = View all pc problems history
+Win + Q + Resource Monitor
+Win + R + devmgmt.msc = Device Manager
+Ctrl + Shift +Esc = Task Manager
+Ctrl + Win + D = Virtual Desktop
+Ctrl + Win + Arrows = Switch Virtual Desktop 
+Win + Tab = See Them All
