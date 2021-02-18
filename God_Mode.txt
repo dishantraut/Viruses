@@ -1,0 +1,10 @@
+[https://www.lifewire.com/god-mode-windows-4154662]
+
+#God_Mode 
+
+Win + R
+cmd
+cd Desktop
+mkdir DEMO
+ren "DEMO" God_Mode.{ED7BA470-8E54-465E-825C-99712043E01C}
+ren "God_Mode.{ED7BA470-8E54-465E-825C-99712043E01C}" OLD_FOLDER
