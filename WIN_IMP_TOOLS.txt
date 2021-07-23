@@ -1,0 +1,113 @@
+# CMD should know things
+	https://helpdeskgeek.com/help-desk/21-cmd-commands-all-windows-users-should-know/
+
+# To check if your computer is activated
+	slmgr /xpr
+
+
+# Root Directory 
+	cmd > cd\
+	to switch to specific drive  > D : 
+
+
+# DISM (Deployment Image Servicing And Managment)
+	DISM /Online /Cleanup-Image /CheckHealth
+	DISM /Online /Cleanup-Image /ScanHealth
+	DISM /Online /Cleanup-Image /RestoreHealth
+
+
+# SFC (System File Cleaner)
+	SFC /scannow
+
+
+# Reset Windows 10 From CMD
+	elevated command prompt +  systemreset
+	
+
+
+# Delete Old driver using command prompt:
+1) Elevated CMD 
+2) SET DEVMGR_SHOW_NONPRESENT_DEVICES=1
+3) devmgmt.msc
+4) View > Show hidden devices >The inactive will be grayed out > Right-Click the inactive device > Click Uninstall device driver to delete it
+
+
+#  This is a disk cleanup utility that is used to clear unnecessary files from the hard drive.
+	Win + R > Cleanmgr 
+
+
+# Uninstall
+	Win +R > appwiz.cpl command – This is used to add or uninstall any program easily.
+
+
+#Defragment
+	Elevated CMD > defrag C: /O
+	optimize all your partitions at once, run the command > elevated cmd > defrag /C /O
+
+
+#System Properties
+	Win + R > sysdm.cpl
+
+#Automatic Maintenance in Windows 10
+	Manually Start Automatic Maintenance: -----	MSchedExe.exe Start
+	Manually Stop Automatic Maintenance: -----	MSchedExe.exe Stop
+
+
+# DNS cache 
+- flush DNS configuration to clear cache of local DNS.
+- stores the location of web server that contains the web pages which you recently viewed.
+- If the location of web server changes before update of DNS cache then you can no longer access the web pages. 
+- So we need to clear DNS cache which no longer requires.
+	
+	elevated cmd + ipconfig/flushdns
+
+
+# Winsocket 
+- is a technical term which defines how network software should access network service. 
+- Generally, we use winsocket reset when any network problem happens after malware attack or 
+- access only certain web pages or any type of network error occurred in our computer.
+
+	elevated cmd + netsh winsock reset
+	netsh int ip reset c:\resetlog.txt
+
+
+# speed up Windows 10
+	Disable programs that run on startup
+	Shut off Windows tips and tricks
+	Stop OneDrive from syncing
+	Turn off search indexing
+	Disable transparency
+	Disable shadows, animations and visual effects
+	Turn on automated Windows maintenance
+	Kill bloatware
+	Defrag your hard disk
+	Shut down and restart Windows
+
+
+# Utilize Disk Cleanup
+	right-click on Local Disk C: and select Properties. 
+	Find the General tab and from there click Disk Cleanup.
+
+
+# Remove bloatware
+- unnecessary apps and software that come preloaded on OS and create a mess.
+	Open the Start Menu > Search for Windows Security.
+	Go to Device performance & health page.
+	Under Fresh Start, click the Additional Info link.
+	Next, click on Get Started. Then accept the UAC prompt.
+	When the Fresh Start UI pops, click Next.
+	The tool will then present a Windows 10 bloatware list that will be removed.
+	Review the list and click Next.
+	Click on Start to begin the Windows 10 reinstallation process.
+
+
+# *Default Gateway 
+- serves as an access point that a networked computer 
+- uses to send information to a computer in another network or the internet. 
+- Ping is helpful to determine the TCP/IP address as well as any network issue.
+	1. Open command prompt as admin
+	2. Type, ipconfig and hit enter
+	3. Now command prompt show your Default gateway address
+	4. Type, ping –t <your Default gateway address>
+	5. Example: – ping –t 192.168.46.4 and hit enter.
+	
